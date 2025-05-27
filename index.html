@@ -495,7 +495,6 @@
         - #PORTFOLIO
       -->
 
-      <!-- #PORTFOLIO -->
 <article class="portfolio" data-page="portfolio">
 
   <header>
@@ -525,45 +524,40 @@
       </button>
 
       <ul class="select-list">
-        <li class="select-item">
-          <button data-select-item>All</button>
-        </li>
-        <li class="select-item">
-          <button data-select-item>Applications</button>
-        </li>
-        <li class="select-item">
-          <button data-select-item>Research</button>
-        </li>
+        <li class="select-item"><button data-select-item>All</button></li>
+        <li class="select-item"><button data-select-item>Applications</button></li>
+        <li class="select-item"><button data-select-item>Research</button></li>
       </ul>
     </div>
 
     <ul class="project-list">
 
-      <!-- Research Poster -->
-      <li class="project-item active" data-filter-item data-category="research">
-        <a href="./assets/pdf/Scholars_Week_Poster.pdf" target="_blank">
-          <figure class="project-img" style="transform: scale(1.2); transition: transform 0.3s ease; transform-origin: center;">
-            <img src="./assets/images/research-poster-thumbnail.png" alt="Research Poster" loading="lazy" style="width: 100%; height: auto; border-radius: 12px;">
+      <!-- Seam Carving -->
+      <li class="project-item active" data-filter-item data-category="applications">
+        <a href="./assets/videos/seam_carving_demo.mp4" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="play-circle-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/seam-carving-thumbnail.png" alt="Seam Carving" loading="lazy">
           </figure>
-          <h3 class="project-title" style="font-size: 1.4rem; text-align: center; margin-top: 1rem;">
-            AI-Assisted Fault Diagnosis
-          </h3>
-          <p class="project-category" style="text-align: center; font-size: 1rem; color: var(--light-gray);">
-            Research Poster
-          </p>
+          <h3 class="project-title">Seam Carving</h3>
+          <p class="project-category">Applications</p>
         </a>
       </li>
 
-      <!-- Seam Carving Project -->
-      <li class="project-item active" data-filter-item data-category="applications">
-        <div class="project-img">
-          <video controls width="640" poster="./assets/images/seam-carving-thumbnail.png">
-            <source src="./assets/videos/seam_carving_demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <h3 class="project-title">Seam Carving</h3>
-        <p class="project-category">Applications</p>
+      <!-- Research Poster -->
+      <li class="project-item active" data-filter-item data-category="research">
+        <a href="./assets/pdfs/research-poster.pdf" target="_blank">
+          <figure class="project-img" style="transform: scale(1.1); transition: transform 0.3s ease;">
+            <div class="project-item-icon-box">
+              <ion-icon name="document-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/research-poster-thumbnail.png" alt="AI-Assisted Fault Diagnosis Poster" loading="lazy">
+          </figure>
+          <h3 class="project-title">AI-Assisted Fault Diagnosis</h3>
+          <p class="project-category">Research</p>
+        </a>
       </li>
 
     </ul>
