@@ -1880,3 +1880,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Enlarged thumbnail for the research poster */
+.project-item.large-thumbnail .project-img img {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1.2); /* enlarge the image */
+  transition: transform 0.3s ease;
+}
+
+.project-item.large-thumbnail .project-img img:hover {
+  transform: scale(1.25);
+}
