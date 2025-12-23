@@ -1900,3 +1900,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 .project-item.large-thumbnail .project-img img:hover {
   transform: scale(1.25);
 }
+
+/* Force contact links to wrap (override ellipsis on large screens) */
+@media (min-width: 1250px) {
+  .contact-info a.contact-link {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+}
